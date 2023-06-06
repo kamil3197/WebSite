@@ -1,58 +1,220 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kamil's WebPage</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Praca Zaliczeniowa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="firstContainer">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
-        <h1>I'm Kamil</h1>
-        <h2>A software engineer</h2>
-        <img class="middle-cloud" src="images/cloud.png" alt="cloud-image">
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
-        <img class="mountain" src="images/mountain.png" alt="mountain-image">
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="https://avatars.githubusercontent.com/u/105457421?v=4" alt="Avatar" height="150px" width="150px" border-radius="50px">
-        <h2>Hello.</h2>
-        <p class="bio">I'm interested in computers since middle school. I was though gamer, but currently I'm spending my time working on my skills in programming. I'm also gym freak for 4 years and starting my journey with electric guitars.</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><b>Lorem</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-        <hr>
-  <div class="skills">
-    <h2>My Skills.</h2>
-    <div class="skill-row">
-      <img class="computer-img" src="images/computer.png" alt="">
-      <h3>Python</h3>
-      <p class="python">I'm at beginner level with knowledge about pandas, oop and django in near future :)</p>
     </div>
-    <div class="skill-row">
-      <img class="" src="" alt="">
-      <h3>HTML & CSS</h3>
-      <p class="python">Just keep your eyes open.</p>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/11.jpg" class="d-block w-100" alt="3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/12.jpg" class="d-block w-100" alt="4">
+      </div>
+      <div class="carousel-item">
+        <img src="img/13.jpg" class="d-block w-100" alt="9">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/1.jpg" alt="1" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/2.jpg" alt="2" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/3.jpg" alt="3" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/4.jpg" alt="4" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/5.jpg" alt="5" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/6.jpg" alt="6" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/12.jpg" alt="7" class="image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail">
+          <div class="img-container">
+            <img src="img/12.jpg" alt="8" class="image">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Looking for my help?</h3>
-        <p class="python">Just send me an e-mail and let's have a talk 📩</p>
-        <a class="btn" href="mailto:kamiladaszewski@gmail.com">CONTACT ME</a>
+
+  <div class="products">
+    <div class="container">
+      <div class="row card-deck">
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad unde maxime sed quaerat harum recusandae beatae. Minus, totam. Fugit, ratione aliquid reiciendis autem fuga suscipit similique ad quo animi est? Omnis facere, quibusdam ipsa consequatur animi molestiae, officiis reiciendis sint vel at veritatis, voluptate natus id nihil laudantium expedita.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card">
+                <img src="img/14.jpg" class="card-img-top" alt="Product 1">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm">Add to Cart</button>
+                  <span class="price">$9.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad unde maxime sed quaerat harum recusandae beatae. Minus, totam. Fugit, ratione aliquid reiciendis autem fuga suscipit similique ad quo animi est? Omnis facere, quibusdam ipsa consequatur animi molestiae, officiis reiciendis sint vel at veritatis, voluptate natus id nihil laudantium expedita.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="card">
+                <img src="img/15.jpg" class="card-img-top" alt="Product 2">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm">Add to Cart</button>
+                  <span class="price">$15.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <hr>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/kamil-adaszewski-8416b9241/">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/kamil3197">Github</a>
-      <p>© 2022 Kamil Adaszewski.</p>
+  <div class="footer">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h1> Lorem</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt praesentium aspernatur iure molestias.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Products</h2>
+          <ul>
+            <li><a href="#">Products 1</a></li>
+            <li><a href="#">Products 2 </a></li>
+            <li><a href="#"> Products 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">532 123 123</a></li>
+            <li><a href="#">532 123 124</a></li>
+            <li><a href="#">532 123 125</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Newsletter</h2>
+          <p>Provide e-mail address</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..." aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
